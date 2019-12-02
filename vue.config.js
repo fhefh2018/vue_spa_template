@@ -13,12 +13,13 @@ const isAnalyze = process.env.NODE_ENV === 'analyze';
 //使用cdn的js和css
 const cdn = {
     js: [
-        'https://cdn.bootcss.com/vue/2.5.17/vue.runtime.min.js',
-        'https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js',
-        'https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js',
-        'https://cdn.bootcss.com/axios/0.18.0/axios.min.js',
+        'https://cdn.staticfile.org/vue/2.6.10/vue.min.js',
+        'https://cdn.staticfile.org/vue/2.6.10/vue.runtime.min.js',
+        'https://cdn.staticfile.org/vuex/3.1.1/vuex.min.js',
+        'https://cdn.staticfile.org/vue-router/3.1.3/vue-router.min.js',
+        'https://cdn.staticfile.org/axios/0.19.0/axios.min.js',
     ]
-}
+};
 // 不打包的一些插件 可以引线上cdn
 let externals = {
     'vue': 'Vue',
